@@ -1,0 +1,25 @@
+import org.json.JSONArray;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+
+public class WriteListToJsonFile {
+    public static void main(String[] args) {
+        // Sample list of strings
+        List<String> stringList = List.of("String1", "String2", "String3");
+
+        // Convert the list to a JSON array
+        JSONArray jsonArray = new JSONArray(stringList);
+
+        // Define the output file path
+        String filePath = "output.json";
+
+        try (FileWriter fileWriter = new FileWriter(filePath)) {
+            // Write the JSON array to the file
+            fileWriter.write(jsonArray.toString(2)); // Use toString(2) for pretty-printing
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
