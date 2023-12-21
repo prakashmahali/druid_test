@@ -1,0 +1,4 @@
+info for  kaafka ingest to druid .
+https://stackoverflow.com/questions/65591754/druid-kafka-indexing-service-consume-avro-schema-erroravrotypeexception-invali
+https://druid.apache.org/docs/latest/development/extensions-core/avro/#avro-types
+
